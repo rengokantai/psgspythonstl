@@ -136,3 +136,7 @@ fruit.popitem(False)
 ```
 
 ### 4 Named Tuples
+```
+from collections import namedtuple
+Address = namedtuple('Name',['server','client'])
+```
