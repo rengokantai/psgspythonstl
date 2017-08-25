@@ -90,3 +90,49 @@ from collections import defaultdict
 str_dict = defaultdict(float)
 str_dict['a'] # 0.0
 ```
+
+```
+class Fraction(object):
+  def __init__(self):
+    self.n=1
+    self.d=2
+  
+  def __repr__(self):
+    return '{0}/{1}'.format(self.n,self.d)
+```
+```
+frac = defaultdict(Fraction)
+frac_dict['foo']  #1/2
+```
+
+```
+def dne():
+  return 'DNE'
+
+dne_dict = defaultDict(dne)
+dne_dict['foo']
+```
+#### 05:52
+```
+fruit = OrderedDict()
+for f in ['a','b','c']:
+  fruit[f]=random.randint(50,100)
+# move to end
+```
+fruit.move_to_end('b')
+```
+# move to first
+```
+fruit.move_to_end('b',False)
+```
+
+#remove last item
+```
+fruit.popitem()
+```
+#remove first item
+```
+fruit.popitem(False)
+```
+
+### 4 Named Tuples
