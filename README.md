@@ -62,3 +62,31 @@ another_lis_counter=Counter(another_lis)
 c.subtract(another_lis_counter)
 c.most_common()
 ```
+
+
+### 3 Other dict Extensions
+```
+defaultdict
+```
+- generate default values for missing keys
+- initializer for a type
+- factory function
+
+```
+OrderedDict
+```
+- pop_item
+- move_to_end
+- Raises an error for missing keys
+
+
+```
+from collections import defaultdict
+str_dict = defaultdict(str)
+str_dict['a'] # ''
+```
+```
+from collections import defaultdict
+str_dict = defaultdict(float)
+str_dict['a'] # 0.0
+```
